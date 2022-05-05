@@ -15,7 +15,7 @@ public class CalculoInss {
     double Aliquota8 = 22;
 
     public double CalculoDescontoInss() {
-        if (Salario < 1212.00) {
+        if (Salario <= 1212.00) {
             DescontoInss = (Aliquota1 * Salario) / 100;
         } else if (Salario >= 1212.01 & Salario <= 2427.35) {
             DescontoInss = (Aliquota2 * Salario) / 100;

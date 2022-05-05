@@ -20,7 +20,7 @@ public class Principal {
         
         
         System.out.println(Nome);
-        System.out.println(D1.DescontoInss);
+        System.out.printf("%.2f", D1.DescontoInss);
         
         
         
