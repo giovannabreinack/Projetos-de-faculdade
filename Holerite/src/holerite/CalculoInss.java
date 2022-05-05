@@ -32,11 +32,14 @@ public class CalculoInss {
         } else if (Salario > 47333.46){
           DescontoInss = (Aliquota8 * Salario) / 100;    
         }
+        
         return DescontoInss;
     }
-
-    void CalculoDescontoInss(double SalarioBruto) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    
     }
 
-}
+
+    
+
+

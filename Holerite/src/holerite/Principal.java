@@ -8,7 +8,7 @@ public class Principal {
     Scanner tc = new Scanner(System.in);
     CalculoInss D1 = new CalculoInss();
     double SalarioBruto,SalaarioLiquido;
-    String Nome = null;
+    String Nome ;
         System.out.println("Insira o nome do funcionário: ");
         Nome = tc.nextLine();
         
@@ -16,9 +16,12 @@ public class Principal {
         SalarioBruto = tc.nextDouble();
         D1.Salario = SalarioBruto;
         
-        D1.CalculoDescontoInss(SalarioBruto);
+        D1.CalculoDescontoInss();
+        
         
         System.out.println(Nome);
+        System.out.println(D1.DescontoInss);
+        
         
         
         
