@@ -25,6 +25,7 @@ public class Principal {
         System.out.println(Nome);
         System.out.printf("%.2f%n", D1.DescontoInss);
         System.out.printf("%.2f%n", D2.DescontoVt);
+        //teste
     }
 
 }

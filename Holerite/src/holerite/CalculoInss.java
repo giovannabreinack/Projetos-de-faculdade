@@ -35,6 +35,10 @@ public class CalculoInss {
         
         return DescontoInss;
     }
+
+    void CalculoDescontoInss(double SalarioBruto) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
     }
