@@ -2,7 +2,7 @@ package holerite;
 
 public class CalculoInss {
 
-    //double Salario1;
+    
     double DescontoInss;
 
     double Aliquota1 = 7.5;
