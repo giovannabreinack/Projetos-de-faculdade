@@ -2,7 +2,7 @@ package holerite;
 
 public class CalculoInss {
 
-    double Salario1;
+    //double Salario1;
     double DescontoInss;
 
     double Aliquota1 = 7.5;
@@ -14,31 +14,29 @@ public class CalculoInss {
     double Aliquota7 = 19;
     double Aliquota8 = 22;
 
-    public double CalculoDescontoInss() {
-        if (Salario1 <= 1212.00) {
-            DescontoInss = (Aliquota1 * Salario1) / 100;
-        } else if (Salario1 >= 1212.01 & Salario1 <= 2427.35) {
-            DescontoInss = (Aliquota2 * Salario1) / 100;
-        } else if (Salario1 >= 2427.36 & Salario1 <= 3641.03 ){
-            DescontoInss = (Aliquota3 * Salario1) / 100;
-        } else if (Salario1 >= 3641.04 & Salario1 <= 7087.22){
-            DescontoInss = (Aliquota4 * Salario1) / 100;
-        } else if (Salario1 >= 7087.23 & Salario1 <= 12136.79){
-            DescontoInss = (Aliquota5 * Salario1) / 100;
-        } else if (Salario1 >= 12136.80 & Salario1 <= 24273.57){
-            DescontoInss = (Aliquota6 * Salario1) / 100;
-        } else if (Salario1 >= 24273.58 & Salario1 <= 47333.46){
-          DescontoInss = (Aliquota7 * Salario1) / 100;  
-        } else if (Salario1 > 47333.46){
-          DescontoInss = (Aliquota8 * Salario1) / 100;    
+    public double CalculoDescontoInss(double x) {
+        if (x <= 1212.00) {
+            DescontoInss = (Aliquota1 * x) / 100;
+        } else if (x >= 1212.01 & x <= 2427.35) {
+            DescontoInss = (Aliquota2 * x) / 100;
+        } else if (x >= 2427.36 & x <= 3641.03 ){
+            DescontoInss = (Aliquota3 * x) / 100;
+        } else if (x >= 3641.04 & x <= 7087.22){
+            DescontoInss = (Aliquota4 * x) / 100;
+        } else if (x >= 7087.23 & x <= 12136.79){
+            DescontoInss = (Aliquota5 * x) / 100;
+        } else if (x >= 12136.80 & x <= 24273.57){
+            DescontoInss = (Aliquota6 * x) / 100;
+        } else if (x >= 24273.58 & x <= 47333.46){
+          DescontoInss = (Aliquota7 * x) / 100;  
+        } else if (x > 47333.46){
+          DescontoInss = (Aliquota8 * x) / 100;    
         }
         
         return DescontoInss;
     }
 
-    void CalculoDescontoInss(double SalarioBruto) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
     
     
     }

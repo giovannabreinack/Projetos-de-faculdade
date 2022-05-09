@@ -4,11 +4,11 @@ public class CalculoVT {
     
 int TaxaVt = 6;
 double DescontoVt;
-double Salario2;
+//double Salario2;
 
-public double CalculoDescontoVt(){
+public double CalculoDescontoVt(double x){
 
-DescontoVt = (Salario2 * TaxaVt)/100;
+DescontoVt = (x * (double)TaxaVt)/100;
 return DescontoVt;
     
 }
