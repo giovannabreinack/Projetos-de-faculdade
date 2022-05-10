@@ -25,8 +25,7 @@ public class Principal {
         System.out.printf("%.2f%n", D1.DescontoInss);
         System.out.printf("%.2f%n", D2.DescontoVt);
         
-        // a giovanna é linda
-        // a giovanna é linda
+        
         
         
     }
