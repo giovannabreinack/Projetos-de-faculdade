@@ -23,3 +23,6 @@ public class Irrf {
 
             return DescontoIrrf;
         }
+        return 0;
+    }
+}
