@@ -1,4 +1,4 @@
-package holerite;
+package descontosTributarios;
 
 public class Irrf {
 
@@ -21,8 +21,9 @@ public class Irrf {
         } else if (x >= 4664.69 ) {
             DescontoIrrf = ((Aliquota4 * x) / 100) - 869.36;
 
-            return DescontoIrrf;
+            
         }
-        return 0;
+        return DescontoIrrf;
+        
     }
 }
