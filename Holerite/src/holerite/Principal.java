@@ -9,7 +9,7 @@ public class Principal {
         CalculoInss D1 = new CalculoInss();
         CalculoVT D2 = new CalculoVT();
         Irrf D3 = new Irrf();
-        double SalarioBruto, SalaarioLiquido;
+        double SalarioBruto, SalaarioLiquido,SalarioBrutoMenosInss;
         String Nome;
         System.out.println("Insira o nome do funcionário: ");
         Nome = tc.nextLine();
@@ -20,7 +20,8 @@ public class Principal {
         
         D1.CalculoDescontoInss(SalarioBruto);
         D2.CalculoDescontoVt(SalarioBruto);
-       D3.CalculoDescontoIrrf(SalarioBruto);
+        SalarioBrutoMenosInss = SalarioBruto - D1.DescontoInss;
+        D3.CalculoDescontoIrrf(SalarioBrutoMenosInss);
         
         
         System.out.println(Nome);

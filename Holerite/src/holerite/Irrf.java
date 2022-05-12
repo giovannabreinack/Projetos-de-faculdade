@@ -18,7 +18,7 @@ public class Irrf {
             DescontoIrrf = ((Aliquota2 * x) / 100) - 354.80;
         } else if (x >= 3751.06 & x <= 4664.68) {
             DescontoIrrf = ((Aliquota3 * x) / 100) - 636.13;
-        } else if (x >= 4664.69) {
+        } else if (x >= 4664.69 ) {
             DescontoIrrf = ((Aliquota4 * x) / 100) - 869.36;
 
             return DescontoIrrf;
