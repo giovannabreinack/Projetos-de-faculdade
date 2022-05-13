@@ -1,4 +1,4 @@
-package descontosTributarios;
+package descontosFolha;
 
 public class CalculoInss {
 
