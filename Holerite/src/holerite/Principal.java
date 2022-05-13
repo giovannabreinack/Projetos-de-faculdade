@@ -1,4 +1,5 @@
 package holerite;
+
 import descontosFolha.Irrf;
 import descontosFolha.CalculoInss;
 import beneficios.*;
@@ -12,6 +13,7 @@ public class Principal {
         CalculoVT D2 = new CalculoVT();
         Irrf D3 = new Irrf();
         CalculoVR D4 = new CalculoVR();
+        CalculoVA D5 = new CalculoVA();
         double SalarioBruto, SalaarioLiquido, S;
         String Nome;
         System.out.println("Insira o nome do funcionário: ");
@@ -21,16 +23,15 @@ public class Principal {
         SalarioBruto = tc.nextDouble();
 
         D1.CalculoDescontoInss(SalarioBruto);
-        
+
         S = SalarioBruto - D1.CalculoDescontoInss(SalarioBruto);
-        
 
         System.out.println(Nome);
         System.out.printf("Inss = %.2f%n", D1.CalculoDescontoInss(SalarioBruto));
         System.out.printf("Vt = %.2f%n", D2.CalculoDescontoVt(SalarioBruto));
         System.out.printf("Ir = %.2f%n", D3.CalculoDescontoIrrf(S));
         System.out.printf("Vr = %.2f%n", D4.CalculoDescontoVr(SalarioBruto));
-
+        System.out.printf("VA = %.2f%n", D5.calculoVa(SalarioBruto));
     }
 
 }
