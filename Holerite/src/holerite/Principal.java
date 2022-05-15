@@ -14,6 +14,7 @@ public class Principal {
         Irrf D3 = new Irrf();
         CalculoVR D4 = new CalculoVR();
         CalculoVA D5 = new CalculoVA();
+        Convenio D6 = new Convenio();
         double SalarioBruto, SalaarioLiquido, S;
         String Nome;
         System.out.println("Insira o nome do funcionário: ");
@@ -32,6 +33,7 @@ public class Principal {
         System.out.printf("Ir = %.2f%n", D3.CalculoDescontoIrrf(S));
         System.out.printf("Vr = %.2f%n", D4.CalculoDescontoVr(SalarioBruto));
         System.out.printf("VA = %.2f%n", D5.calculoVa(SalarioBruto));
+        System.out.printf("Convenio = %.2f%n", D6.CalculoDescontoConvenio(SalarioBruto));
     }
 
 }
